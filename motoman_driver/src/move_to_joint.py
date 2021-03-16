@@ -8,12 +8,20 @@ from trajectory_msgs.msg import JointTrajectory, JointTrajectoryPoint
 
 # display command usage
 def print_usage():
-    print '\nUsage:\n\n  move_to_joint.py endPos [duration]'
-    print '     where endPos is: "[J1, J2, J3,...]" in radians'
-    print '     and duration (OPTIONAL) is the expected move duration (in seconds)'
-    print '\n  move_to_joint.py trajectory.bag [duration]'
-    print '     will move to the first JointTrajectory point in a bag file'
-    print '     where duration (OPTIONAL) is the expected move duration (in seconds)\n'
+    # 2021/03/16 hato ------------------------------ start ------------------------------
+    # print '\nUsage:\n\n  move_to_joint.py endPos [duration]'
+    # print '     where endPos is: "[J1, J2, J3,...]" in radians'
+    # print '     and duration (OPTIONAL) is the expected move duration (in seconds)'
+    # print '\n  move_to_joint.py trajectory.bag [duration]'
+    # print '     will move to the first JointTrajectory point in a bag file'
+    # print '     where duration (OPTIONAL) is the expected move duration (in seconds)\n'
+    print('\nUsage:\n\n  move_to_joint.py endPos [duration]')
+    print('     where endPos is: "[J1, J2, J3,...]" in radians')
+    print('     and duration (OPTIONAL) is the expected move duration (in seconds)')
+    print('\n  move_to_joint.py trajectory.bag [duration]')
+    print('     will move to the first JointTrajectory point in a bag file')
+    print('     where duration (OPTIONAL) is the expected move duration (in seconds)\n')
+    # 2021/03/16 hato ------------------------------  end  ------------------------------
 
 # build a simple trajectory from the start to end position
 #   - for the FS100, we can get by with a simple 2-point trajectory
